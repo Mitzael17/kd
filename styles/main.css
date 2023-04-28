@@ -3634,22 +3634,6 @@ html.theme-visually-impaired .ourVideos__item {
   font-size: 0.7em;
 }
 
-.ourVideos .video__preview:before {
-  content: "";
-  width: 100%;
-  z-index: 3;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-  background: var(--videoHoverFilter);
-  pointer-events: none;
-}
-
 .ourVideos__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3737,6 +3721,26 @@ html.theme-visually-impaired .ourVideos__item {
 
 .ourVideos__text {
   letter-spacing: -0.02em;
+}
+
+.video__preview:before {
+  content: "";
+  width: 100%;
+  z-index: 3;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  background: var(--videoHoverFilter);
+  pointer-events: none;
+}
+
+.ourVideos__img--autoHeight {
+  height: auto;
 }
 
 .galleryItem {
@@ -4115,6 +4119,7 @@ html.theme-visually-impaired .ourVideos__item {
   position: relative;
   border-radius: 1.88em;
   overflow: hidden;
+  max-height: 100%;
 }
 
 .video iframe {
@@ -4123,6 +4128,7 @@ html.theme-visually-impaired .ourVideos__item {
   top: 0;
   width: 100%;
   height: 100%;
+  border: 0;
   z-index: 1;
 }
 
@@ -4991,6 +4997,10 @@ section:not(:last-child) {
 .map {
   max-height: 314px;
   height: 19.63em;
+}
+
+.map iframe {
+  border: 0;
 }
 
 .table-wrapper {
@@ -6029,6 +6039,19 @@ section:not(:last-child) {
     width: 2em;
     height: 2em;
   }
+
+  html.theme-visually-impaired .gridX3Item {
+    font-size: 1rem;
+  }
+
+  .gridX3 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .gridX3 .gridX3Item {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -6317,19 +6340,6 @@ section:not(:last-child) {
   }
 
   .gridX5 .gridX5Item {
-    font-size: 1rem;
-  }
-
-  html.theme-visually-impaired .gridX3Item {
-    font-size: 1rem;
-  }
-
-  .gridX3 {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .gridX3 .gridX3Item {
     font-size: 1rem;
   }
 }
