@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Главная</title>
     <link rel="icon" href="favicon.svg"/>
-    <link rel="stylesheet" href="styles/bvi.css?_v=20230423020736"/>
-    <link rel="stylesheet" href="styles/main.css?_v=20230423020736"/>
+    <link rel="stylesheet" href="styles/bvi.css?_v=20230428172358"/>
+    <link rel="stylesheet" href="styles/main.css?_v=20230428172358"/>
+    <link rel="stylesheet" href="styles/text-editor.css?_v=20230428172358"/>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container" id="header-container">
         <div class="header">
           <div class="header__rest"><a class="weakText" href="information.html">Сведения об образовательной организации</a>
             <div class="weakText theme-switcher bvi-open" id="theme-switcher">
@@ -36,8 +37,39 @@
                   <li><a class="link" href="/">Главная</a></li>
                   <li><a class="link" href="news.html">Новости</a></li>
                   <li><a class="link" href="ourGroups.html">Группы</a></li>
-                  <li><a class="link" href="order.html">Родителям</a></li>
-                  <li><a class="link" href="about.html">О нас</a></li>
+                  <li class="header__linkWithSublist"><a class="link flex flex flex-a-c" href="order.html">Родителям
+                      <div class="select-list__arrow">
+                        <svg>
+                          <use href="img/icons/icons.svg#arrow-select"></use>
+                        </svg>
+                      </div></a>
+                    <div class="header__sublistWrapper">
+                      <ul class="header__sublist flex flex-column border-radius">
+                        <li><a class="link" href="order.html">Порядок приема в детсад</a></li>
+                        <li><a class="link" href="compensation.html">Компенсация оплаты за сад</a></li>
+                        <li><a class="link" href="blanks.html">Бланки заявлений</a></li>
+                        <li><a class="link" href="questions.html">Частые вопросы</a></li>
+                        <li><a class="link" href="advices.html">Советы специалистов</a></li>
+                        <li><a class="link" href="schools.html">Школы рядом с садиком</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header__linkWithSublist flex flex flex-a-c"><a class="link flex flex flex-a-c" href="about.html">О нас
+                      <div class="select-list__arrow">
+                        <svg>
+                          <use href="img/icons/icons.svg#arrow-select"></use>
+                        </svg>
+                      </div></a>
+                    <div class="header__sublistWrapper">
+                      <ul class="header__sublist flex flex-column border-radius">
+                        <li><a class="link" href="collective.html">Наш коллектив</a></li>
+                        <li><a class="link" href="galleries.html">Наши галереи</a></li>
+                        <li><a class="link" href="ourVideos.html">Наши видео</a></li>
+                        <li><a class="link" href="achievements.html">Наши достижения</a></li>
+                        <li><a class="link" href="requisites.html">Наши реквизиты</a></li>
+                      </ul>
+                    </div>
+                  </li>
                   <li><a class="link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <div class="header__burgerWrapper" id="burger">
@@ -56,12 +88,10 @@
                   <div class="weakText">07:00 – 19:00</div>
                 </div>
               </div>
-                  <div class="socials"><a class="socials__item socials__item--vk" href="https://vk.com" target="blank"><img src="img/vk.svg" alt="Вконтакте"/></a><a class="socials__item socials__item--ok" href="https://ok.ru" target="blank"><img src="img/ok.svg" alt="Одноклассники"/></a><a class="socials__item socials__item--telegram" href="https://telegram.org" target="blank"><img src="img/telegram.svg" alt="Телеграм"/></a></div><a class="button-ref" href="feedback.html">
-                    <button class="button button--usual">Обратная связь
-                      <svg class="icon">
-                        <use href="img/icons/icons.svg#arrow-button"></use>
-                      </svg>
-                    </button></a>
+                  <div class="socials"><a class="socials__item socials__item--vk" href="https://vk.com" target="blank"><img src="img/vk.svg" alt="Вконтакте"/></a><a class="socials__item socials__item--ok" href="https://ok.ru" target="blank"><img src="img/ok.svg" alt="Одноклассники"/></a><a class="socials__item socials__item--telegram" href="https://telegram.org" target="blank"><img src="img/telegram.svg" alt="Телеграм"/></a></div><a class="button button--usual" href="feedback.html">Обратная связь
+                    <svg class="icon">
+                      <use href="img/icons/icons.svg#arrow-button"></use>
+                    </svg></a>
             </div>
           </div>
         </div>
@@ -74,12 +104,10 @@
             <div class="banner__info">
               <div class="banner__subtitle">МДОАУ</div>
               <div class="banner__title">Детский сад №73</div>
-              <div class="banner__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину.</div><a class="button-ref" href="about.html">
-                      <button class="button button--usual bigButton">Подробнее о нас
-                        <svg class="icon">
-                          <use href="img/icons/icons.svg#arrow-button"></use>
-                        </svg>
-                      </button></a>
+              <div class="banner__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину.</div><a class="button button--usual bigButton" href="about.html">Подробнее о нас
+                      <svg class="icon">
+                        <use href="img/icons/icons.svg#arrow-button"></use>
+                      </svg></a>
             </div>
             <div class="banner__image">
               <picture class="img">
@@ -96,15 +124,18 @@
             <div class="banner__info banner__info--centerContentOnMobile">
               <div class="banner__subtitle">МДОАУ</div>
               <div class="banner__title">Детский сад №73</div>
-              <div class="banner__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину.</div><a class="button-ref" href="about.html">
-                      <button class="button button--white bigButton">Подробнее о нас
-                        <svg class="icon">
-                          <use href="img/icons/icons.svg#arrow-button"></use>
-                        </svg>
-                      </button></a>
+              <div class="banner__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину.</div><a class="button button--white bigButton" href="about.html">Подробнее о нас
+                      <svg class="icon">
+                        <use href="img/icons/icons.svg#arrow-button"></use>
+                      </svg></a>
             </div><a class="banner__image" href="#" target="blank">
-              <div class="img"><img src="img/temporary/banner-2.png" alt="image"/>
-                <div class="videoSign"></div>
+              <div class="img">
+                      <div class="video video--static">
+                        <div class="video__preview"><img src="img/temporary/banner-2.png" alt="video"/>
+                          <div class="videoSign"></div>
+                        </div>
+                        <iframe width="560" loading="lazy" height="300" src="https://www.youtube.com/embed/nZr1oqL0oZk" id="banner-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe>
+                      </div>
               </div></a>
           </div>
         </div>
@@ -115,12 +146,10 @@
             <div class="smBanner__info">
               <div class="smBanner__text">Не можете записать ребёнка в сад?</div>
               <div class="smBanner__text">Хотите рассказать о воспитателях?</div>
-              <div class="smBanner__text">Знаете, как улучшить питание и занятия?</div><a class="button-ref" href="feedback.html">
-                      <button class="button button--white bigButton">Написать сообщение
-                        <svg class="icon">
-                          <use href="img/icons/icons.svg#arrow-button"></use>
-                        </svg>
-                      </button></a>
+              <div class="smBanner__text">Знаете, как улучшить питание и занятия?</div><a class="button button--white bigButton" href="feedback.html">Написать сообщение
+                      <svg class="icon">
+                        <use href="img/icons/icons.svg#arrow-button"></use>
+                      </svg></a>
             </div>
             <div class="smBanner__img"><img src="img/temporary/smBanner-1.png" loading="lazy" alt="image"/></div>
           </div>
@@ -151,40 +180,30 @@
                 <h2 class="mb-step"><img class="icon" src="img/news.svg" alt="icon"/>Наши новости
                 </h2>
           <div class="news"><a class="news__item gridItemX2" href="newsPage.html">
-                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-1.png" loading="lazy" alt="news"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                    </div>
+                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-1.png" loading="lazy" alt="news"/></div>
                     <div class="news__info">
                       <div class="news__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение. Но чтобы вы поняли, откуда возникает это превратное</div>
                       <div class="tinyText">20 января 2023</div>
                     </div></a><a class="news__item gridItemX2" href="newsPage.html">
-                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-2.png" loading="lazy" alt="news"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                    </div>
+                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-2.png" loading="lazy" alt="news"/></div>
                     <div class="news__info">
                       <div class="news__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение. Но чтобы вы поняли, откуда возникает это превратное</div>
                       <div class="tinyText">20 января 2023</div>
                     </div></a><a class="news__item gridItemX2" href="newsPage.html">
-                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-3.png" loading="lazy" alt="news"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                    </div>
+                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-3.png" loading="lazy" alt="news"/></div>
                     <div class="news__info">
                       <div class="news__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение. Но чтобы вы поняли, откуда возникает это превратное</div>
                       <div class="tinyText">20 января 2023</div>
                     </div></a><a class="news__item gridItemX2" href="newsPage.html">
-                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-4.png" loading="lazy" alt="news"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                    </div>
+                    <div class="news__img relative"><img class="relative priority" src="img/temporary/news-4.png" loading="lazy" alt="news"/></div>
                     <div class="news__info">
                       <div class="news__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение. Но чтобы вы поняли, откуда возникает это превратное</div>
                       <div class="tinyText">20 января 2023</div>
                     </div></a>
-          </div><a class="button-ref" href="news.html">
-                  <button class="button button--white mt-step w-100">Смотреть все новости
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+          </div><a class="button button--white mt-step w-100" href="news.html">Смотреть все новости
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
       <section>
@@ -243,83 +262,83 @@
             <div class="collective__slider swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-1.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-1.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-2.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-2.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-3.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-3.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-4.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-4.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-1.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-1.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-2.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-2.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-3.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-3.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
                 <div class="swiper-slide collectiveSlide">
-                  <div class="collectiveSlide__img"><img src="img/temporary/collective-4.png" alt="Анна Гордеева" loading="lazy"/>
+                  <div class="collectiveSlide__img"><a href="employee_2.html"><img src="img/temporary/collective-4.png" alt="Анна Гордеева" loading="lazy"/></a>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="collectiveSlide__content">
-                    <div class="word-on-new-line collectiveSlide__fio"><span>Анна Гордеева</span></div>
+                    <div class="word-on-new-line collectiveSlide__fio"><a href="employee_2.html"><span>Анна Гордеева</span></a></div>
                     <div class="collectiveSlide__post">Воспитатель</div>
-                    <div class="collectiveSlide__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и<span class="grey"> восхваляющих страдания...</span></div><a class="collectiveSlide__link" href="employee.html"><span></span>Подробнее</a>
+                    <div class="collectiveSlide__text collectiveSlide__text--greyArea">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания...</div><a class="collectiveSlide__link" href="employee_2.html"><span></span>Подробнее</a>
                   </div>
                 </div>
               </div>
@@ -330,12 +349,10 @@
                       <div class="slide-button-prev slide-button"><img src="img/slide-arrow.svg" alt="previous"/></div>
                     </div>
             </div>
-          </div><a class="button-ref" href="collective.html">
-                  <button class="button button--white mt-step w-100">Смотреть весь коллектив
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+          </div><a class="button button--white mt-step w-100" href="collective.html">Смотреть весь коллектив
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
       <section>
@@ -343,7 +360,7 @@
                 <h2 class="mb-step"><img class="icon" src="img/question.svg" alt="icon"/>Частые вопросы
                 </h2>
                 <div class="border-radius grey-background pad-step to-half-on-mobile">
-                  <div class="spoiler mb-halfStep" data-spoiler="true">
+                  <div class="spoiler mb-halfStep" data-spoiler="true" data-disable-outclick="true" data-family-spoilers="questions">
                     <div class="spoiler__area"><span>Текст вопроса</span>
                       <svg class="arrow-icon">
                         <use href="img/icons/icons.svg#arrow-select"></use>
@@ -353,7 +370,7 @@
                       <div class="spoiler__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</div>
                     </div>
                   </div>
-                  <div class="spoiler mb-halfStep" data-spoiler="true">
+                  <div class="spoiler mb-halfStep" data-spoiler="true" data-disable-outclick="true" data-family-spoilers="questions">
                     <div class="spoiler__area"><span>Текст вопроса</span>
                       <svg class="arrow-icon">
                         <use href="img/icons/icons.svg#arrow-select"></use>
@@ -363,7 +380,7 @@
                       <div class="spoiler__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</div>
                     </div>
                   </div>
-                  <div class="spoiler mb-halfStep" data-spoiler="true">
+                  <div class="spoiler mb-halfStep" data-spoiler="true" data-disable-outclick="true" data-family-spoilers="questions">
                     <div class="spoiler__area"><span>Текст вопроса</span>
                       <svg class="arrow-icon">
                         <use href="img/icons/icons.svg#arrow-select"></use>
@@ -373,7 +390,7 @@
                       <div class="spoiler__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</div>
                     </div>
                   </div>
-                  <div class="spoiler mb-halfStep" data-spoiler="true">
+                  <div class="spoiler mb-halfStep" data-spoiler="true" data-disable-outclick="true" data-family-spoilers="questions">
                     <div class="spoiler__area"><span>Текст вопроса</span>
                       <svg class="arrow-icon">
                         <use href="img/icons/icons.svg#arrow-select"></use>
@@ -383,7 +400,7 @@
                       <div class="spoiler__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</div>
                     </div>
                   </div>
-                  <div class="spoiler mb-halfStep" data-spoiler="true">
+                  <div class="spoiler mb-halfStep" data-spoiler="true" data-disable-outclick="true" data-family-spoilers="questions">
                     <div class="spoiler__area"><span>Текст вопроса</span>
                       <svg class="arrow-icon">
                         <use href="img/icons/icons.svg#arrow-select"></use>
@@ -392,71 +409,89 @@
                     <div class="spoiler__content" data-spoiler-wrapper="true">
                       <div class="spoiler__text">Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</div>
                     </div>
-                  </div>
-                        <button class="button button--usual w-100">Задать свой вопрос
+                  </div><a class="button button--usual w-100" href="feedback.html">Задать свой вопрос
                           <svg class="icon">
                             <use href="img/icons/icons.svg#arrow-button"></use>
-                          </svg>
-                        </button>
-                </div>
-                <button class="button button--white w-100 mt-step">Смотреть все вопросы
+                          </svg></a>
+                </div><a class="button button--white w-100 mt-step" href="questions.html">Смотреть все вопросы
                   <svg class="icon">
                     <use href="img/icons/icons.svg#arrow-button"></use>
-                  </svg>
-                </button>
+                  </svg></a>
         </div>
       </section>
       <section>
         <div class="container">
                 <h2 class="mb-step"><img class="icon" src="img/video.svg" alt="icon"/>Наши видео
                 </h2>
-          <div class="ourVideos"><a class="ourVideos__item" href="group.html">
+          <div class="ourVideos">
+                  <div class="ourVideos__item">
                     <div class="tinyText">12 июля 2023</div>
-                    <div class="ourVideos__img border-radius relative"><img class="border-radius relative priority" src="img/temporary/video-1.png" alt="Название активного видео" loading="lazy"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                      <div class="videoSign"></div>
+                    <div class="ourVideos__img border-radius relative">
+                            <div class="video video--static">
+                              <div class="video__preview"><img src="img/temporary/video-1.png" alt="video"/>
+                                <div class="videoSign"></div>
+                              </div>
+                              <iframe width="560" loading="lazy" height="300" src="https://www.youtube.com/embed/nZr1oqL0oZk" id="ourVideo-1-img/temporary/video-1.png" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                     </div>
                     <div class="ourVideos__text">
                       <svg>
                         <use href="img/icons/icons.svg#video-triangle"></use>
                       </svg><span>Название активного видео</span>
-                    </div></a><a class="ourVideos__item" href="group.html">
+                    </div>
+                  </div>
+                  <div class="ourVideos__item">
                     <div class="tinyText">12 июля 2023</div>
-                    <div class="ourVideos__img border-radius relative"><img class="border-radius relative priority" src="img/temporary/video-2.png" alt="Длинное длинное длинное название видео" loading="lazy"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                      <div class="videoSign"></div>
+                    <div class="ourVideos__img border-radius relative">
+                            <div class="video video--static">
+                              <div class="video__preview"><img src="img/temporary/video-2.png" alt="video"/>
+                                <div class="videoSign"></div>
+                              </div>
+                              <iframe width="560" loading="lazy" height="300" src="https://www.youtube.com/embed/nZr1oqL0oZk" id="ourVideo-1-img/temporary/video-2.png" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                     </div>
                     <div class="ourVideos__text">
                       <svg>
                         <use href="img/icons/icons.svg#video-triangle"></use>
                       </svg><span>Длинное длинное длинное название видео</span>
-                    </div></a><a class="ourVideos__item" href="group.html">
+                    </div>
+                  </div>
+                  <div class="ourVideos__item">
                     <div class="tinyText">12 июля 2023</div>
-                    <div class="ourVideos__img border-radius relative"><img class="border-radius relative priority" src="img/temporary/video-3.png" alt="Название видео" loading="lazy"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                      <div class="videoSign"></div>
+                    <div class="ourVideos__img border-radius relative">
+                            <div class="video video--static">
+                              <div class="video__preview"><img src="img/temporary/video-3.png" alt="video"/>
+                                <div class="videoSign"></div>
+                              </div>
+                              <iframe width="560" loading="lazy" height="300" src="https://www.youtube.com/embed/nZr1oqL0oZk" id="ourVideo-1-img/temporary/video-3.png" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                     </div>
                     <div class="ourVideos__text">
                       <svg>
                         <use href="img/icons/icons.svg#video-triangle"></use>
                       </svg><span>Название видео</span>
-                    </div></a><a class="ourVideos__item" href="group.html">
+                    </div>
+                  </div>
+                  <div class="ourVideos__item">
                     <div class="tinyText">12 июля 2023</div>
-                    <div class="ourVideos__img border-radius relative"><img class="border-radius relative priority" src="img/temporary/video-4.png" alt="Длинное длинное длинное название видео" loading="lazy"/>
-                      <div class="swiper-lazy-preloader animate"></div>
-                      <div class="videoSign"></div>
+                    <div class="ourVideos__img border-radius relative">
+                            <div class="video video--static">
+                              <div class="video__preview"><img src="img/temporary/video-4.png" alt="video"/>
+                                <div class="videoSign"></div>
+                              </div>
+                              <iframe width="560" loading="lazy" height="300" src="https://www.youtube.com/embed/nZr1oqL0oZk" id="ourVideo-1-img/temporary/video-4.png" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                     </div>
                     <div class="ourVideos__text">
                       <svg>
                         <use href="img/icons/icons.svg#video-triangle"></use>
                       </svg><span>Длинное длинное длинное название видео</span>
-                    </div></a>
-          </div><a class="button-ref" href="ourVideos.html">
-                  <button class="button button--white w-100 mt-step">Смотреть все видео
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+                    </div>
+                  </div>
+          </div><a class="button button--white w-100 mt-step" href="ourVideos.html">Смотреть все видео
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
       <section>
@@ -502,12 +537,10 @@
                   <div class="slide-button-container slide-button-container-prev">
                     <div class="slide-button-prev slide-button closer"><img src="img/slide-arrow.svg" alt="previous"/></div>
                   </div>
-          </div><a class="button-ref" href="galleries.html">
-                  <button class="button button--white w-100 mt-step">Смотреть все галереи
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+          </div><a class="button button--white w-100 mt-step" href="galleries.html">Смотреть все галереи
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
       <section>
@@ -547,12 +580,10 @@
                         <div class="slide-button-container slide-button-container-prev">
                           <div class="slide-button-prev slide-button closer"><img src="img/slide-arrow.svg" alt="previous"/></div>
                         </div>
-                </div><a class="button-ref" href="achievements.html">
-                  <button class="button button--white w-100 mt-step">Смотреть все достижения
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+                </div><a class="button button--white w-100 mt-step" href="achievements.html">Смотреть все достижения
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
       <section>
@@ -561,12 +592,10 @@
             <div class="flexBox__img relative"><img class="relative priority" src="img/temporary/about-1.png" alt="about us" loading="lazy"/></div>
             <div class="flexBox__content">
               <h2 class="flexBox__title">О нас</h2>
-              <p>Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</p><a class="button-ref" href="about.html">
-                      <button class="button button--usual flexBox__button">Подробнее о нас
-                        <svg class="icon">
-                          <use href="img/icons/icons.svg#arrow-button"></use>
-                        </svg>
-                      </button></a>
+              <p>Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания.</p><a class="button button--usual flexBox__button" href="about.html">Подробнее о нас
+                      <svg class="icon">
+                        <use href="img/icons/icons.svg#arrow-button"></use>
+                      </svg></a>
             </div>
           </div>
         </div>
@@ -586,12 +615,10 @@
               <div class="swiper-lazy-preloader animate"></div></a><a class="link-block relative" href="#"><img class="relative priority" src="img/temporary/links-9.png" alt="link" loading="lazy"/>
               <div class="swiper-lazy-preloader animate"></div></a><a class="link-block relative" href="#"><img class="relative priority" src="img/temporary/links-10.png" alt="link" loading="lazy"/>
               <div class="swiper-lazy-preloader animate"></div></a>
-          </div><a class="button-ref" href="usefulLinks.html">
-                  <button class="button button--white mt-step w-100">Смотреть все полезные ссылки
-                    <svg class="icon">
-                      <use href="img/icons/icons.svg#arrow-button"></use>
-                    </svg>
-                  </button></a>
+          </div><a class="button button--white mt-step w-100" href="usefulLinks.html">Смотреть все полезные ссылки
+                  <svg class="icon">
+                    <use href="img/icons/icons.svg#arrow-button"></use>
+                  </svg></a>
         </div>
       </section>
     </main>
@@ -673,14 +700,14 @@
               <div class="footer__restItem">© 2023 МДОАУ  "Детский сад №73".  Все права защищены</div>
               <div class="footer__restItem"><a href="#">Политика конфиденциальности</a></div>
               <div class="footer__restItem"><a href="map.html">Карта сайта</a></div>
-            </div>
-            <div class="footer__restBlock footer__restBlock--developer">Сайт разработан в<a class="footer__developerLogo" href="#" target="blank"><img src="img/logo-developer.png" alt="developer logo"/></a></div>
+            </div><a class="footer__restBlock footer__restBlock--developer" href="#" target="blank">Сайт разработан в
+              <div class="footer__developerLogo"><img src="img/logo-developer.png" alt="developer logo"/></div></a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="https://www.youtube.com/player_api?_v=20230423020736"></script>
-    <script src="scripts/bvi.min.js?_v=20230423020736"></script>
-    <script src="scripts/main.min.js?_v=20230423020736"></script>
+    <script src="https://www.youtube.com/player_api?_v=20230428172358"></script>
+    <script src="scripts/bvi.min.js?_v=20230428172358"></script>
+    <script src="scripts/main.min.js?_v=20230428172358"></script>
   </body>
 </html>
