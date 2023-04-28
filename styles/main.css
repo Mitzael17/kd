@@ -2945,6 +2945,10 @@ html.theme-visually-impaired .banner--complex-image .banner__info {
   background: url("../img/banner-rectangle-blue.svg") 28% 21%/121.19em 58.56em no-repeat, var(--blueBannerBackground);
 }
 
+.banner--blue .banner__title {
+  color: #ffffff;
+}
+
 .banner--blue .banner__subtitle {
   color: var(--blueBannerSubtitleColor);
 }
