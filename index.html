@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Главная</title>
 
-    <meta property="og:title" content="GREEN API CONSOLE personal account for managing the WhatsApp messaging service" />
-    <meta property="og:description" content="GREEN API: WhatsApp API on any language PHP, JavaScript, 1C, Python, Java, C#, VBA etc." />
+    <script>
+      if (window.location.hostname === 'greenapi.com') {
+        document.head.insertAdjacentHTML('beforeend', '<meta property="og:title" content="GREEN API CONSOLE personal account for managing the WhatsApp messaging service" />');
+        document.head.insertAdjacentHTML('beforeend', '<meta property="og:description" content="GREEN API: WhatsApp API on any language PHP, JavaScript, 1C, Python, Java, C#, VBA etc." />')
+      } else {
+        document.head.insertAdjacentHTML('beforeend', '<meta property="og:title" content="GREEN API CONSOLE личный кабинет для управления сервисом отправки сообщений в WhatsApp" />');
+        document.head.insertAdjacentHTML('beforeend', '<meta property="og:description" content="GREEN API - интеграция с WhatsApp на любом языке программирования PHP, JavaScript, 1С, Python, Java, C#, VBA" />')
+      }
+    </script>
     <meta property="og:image" itemprop="image" content="https://console.green-api.com/img/logo.png" />
     <meta property="og:image:secure_url" itemprop="image" content="https://console.green-api.com/img/logo.png" />
     <meta property="og:image:type" content="image/png" />
